@@ -2,9 +2,9 @@ const breadPriceEa = 15.678;
 const meatPriceKg = 123.965;
 const tomatoesPriceKg = 90.2345;
 
-console.log(`Bread price: ${breadPriceEa} hrn/ea`);
-console.log(`Meat price: ${meatPriceKg} hrn/kg`);
-console.log(`Tomatoes price: ${tomatoesPriceKg} hrn/kg`);
+console.log(`Bread price: ${breadPriceEa} uah/ea`);
+console.log(`Meat price: ${meatPriceKg} uah/kg`);
+console.log(`Tomatoes price: ${tomatoesPriceKg} uah/kg`);
 
 // Виведіть максимальне число
 const maxPrice = Math.max(breadPriceEa, meatPriceKg, tomatoesPriceKg);
@@ -31,8 +31,9 @@ const sumOfIntegersOfPricesIsEven = (sumOfIntegersOfPrices % 2) === 0;
 console.log(`Sum of integers of prices is even number: ${sumOfIntegersOfPricesIsEven}`);
 
 // Виведіть суму решти, при оплаті всіх товарів (без округлення), якщо клієнт платить 500 грн
-const theRestFrom500Hrn = 500 - sumOfPrices;
-console.log(`The rest from 500 hrn: ${theRestFrom500Hrn}`);
+const banknote500Uah = 500;
+const theRestFrom500Uah = banknote500Uah - sumOfPrices;
+console.log(`The rest from 500 uah: ${theRestFrom500Uah}`);
 
 // Виведіть середнє значення цін, округлене до другого знаку після коми
 const averagePriceOfProducts = (sumOfPrices / 3).toFixed(2);
@@ -59,7 +60,7 @@ Result:
     Sum of integers of prices: ${sumOfIntegersOfPrices};
     Rounded to hundreds sum of prices: ${roundedToHundredsSumOfPrices};
     Sum of integers of prices is even number: ${sumOfIntegersOfPricesIsEven};
-    The rest from 500 hrn: ${theRestFrom500Hrn};
+    The rest from 500 uah: ${theRestFrom500Uah};
     The average price of products: ${averagePriceOfProducts};
     Amount to be paid including discount: ${amountIncludingDiscount};
     Profit including discount: ${profitIncludingDiscount}
